@@ -1,0 +1,191 @@
+<!-- about section starts  -->
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <h1>About me</h1>
+      </div>
+      <div class="col-md-8">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem
+          laborum itaque. Perspiciatis in veniam illum deserunt, quos animi
+          maiores nisi officiis amet accusantium soluta a, excepturi vero
+          obcaecati nobis.
+        </p>
+        <a href="http://localhost:4200/" class="link-btn" download
+          >Download CV</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about section ends -->
+
+<!-- Skills  section starts  -->
+
+<section class="Skills" id="Skills ">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>Skills</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          quae sapiente aspernatur quo, vitae aperiam reprehenderit suscipit
+          eligendi, consequatur, dignissimos unde. Culpa fugiat hic porro maxime
+          tempora eaque, quos error! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Omnis dolorem laborum itaque. Perspiciatis in veniam
+          illum deserunt, quos animi maiores nisi officiis amet accusantium
+          soluta a, excepturi vero obcaecati nobis.
+        </p>
+      </div>
+      <div class="col-md-4 Focus">
+        <h5>My Focus</h5>
+        <hr />
+        <ul>
+          <li *ngFor="let skill of focusList">
+            {{ skill }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 pro">
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">HTML</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">CSS</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">javascript</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">React</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">photoshop</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">Abode XD</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">Node.js</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <br />
+        <div class="d-flex">
+          <span class="pe-3 badge bg-dark">WordPress</span>
+          <div class="progress" style="width: 50%; height: 20px">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills  section ends -->
+
+<!-- Portfolio section starts  -->
+
+<section class="Portfolio" id="Portfolio">
+  <h1>Portfolio</h1>
+  <div class="container">
+    <div class="row align-items-center">
+      <div
+        class="card col-md-3 content"
+        *ngFor="let p of protfolio; let i = index"
+        [ngClass]="i % 2 == 0 ? 'bg-secondary' : 'bg-dark'"
+      >
+        <div class="card-body">
+          <h5 class="card-title">{{ p }}</h5>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio section ends -->
