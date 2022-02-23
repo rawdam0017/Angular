@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   focusList: string[] = ["UI/UX Design","Responsive Design","Wed Design","Mobile App Design"];
   // supList: string[]=["HTML","CSS","JS","Nod.js"];
+  // widthList: string[]=["85%","85%","90%","65%"];
   protfolio : string[] =['Web Design','Web Design','Web Design','Web Design','Web Design','Web Design']
 
   constructor() { }

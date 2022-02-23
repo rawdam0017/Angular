@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row ">
+        <div class="card col-md-4" *ngFor="let item of cardlist">
+            <div class="card-body text-center">
+                <img [src]="item.img" class="rounded-circle w-50" />
+                <h5 class="card-title">{{ item.title }}</h5>
+                <p class="card-text">{{ item.text }}</p>
+                <a href="#" class="btn btn-secondary">{{ item.btn }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+ 
+ 
